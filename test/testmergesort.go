@@ -5,11 +5,10 @@ func MergeSort(A []int, start, end int, tmp []int) {
 		return
 	}
 
-	q := (start + end) / 2
-	MergeSort(A, start, q, tmp)
-	MergeSort(A, q+1, end, tmp)
-	merge(A, start, q, end, tmp)
-
+	mid := (start + end) / 2
+	MergeSort(A, start, mid, tmp)
+	MergeSort(A, mid+1, end, tmp)
+	merge(A, start, mid, end, tmp)
 }
 
 func merge(A []int, left, mid, right int, tmp []int) {
@@ -19,7 +18,8 @@ func merge(A []int, left, mid, right int, tmp []int) {
 			tmp[t] = A[i]
 			i++
 			t++
-		} else {
+		}
+		if A[j] < A[i] {
 			tmp[t] = A[j]
 			j++
 			t++
@@ -28,13 +28,13 @@ func merge(A []int, left, mid, right int, tmp []int) {
 
 	for i <= mid {
 		tmp[t] = A[i]
-		i++
 		t++
+		i++
 	}
 	for j <= right {
 		tmp[t] = A[j]
-		j++
 		t++
+		j++
 	}
 
 	t = 0
@@ -43,5 +43,4 @@ func merge(A []int, left, mid, right int, tmp []int) {
 		left++
 		t++
 	}
-
 }

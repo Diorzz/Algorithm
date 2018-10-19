@@ -12,11 +12,11 @@ func QuickSort(A []int, start, end int) {
 }
 
 func partition(A []int, left, right int) int {
-	pivot := A[right]
 	i := left
+	pivot := A[right]
 	for j := left; j <= right; j++ {
 		if A[j] < pivot {
-			A[i], A[j] = A[j], A[i]
+			A[j], A[i] = A[i], A[j]
 			i++
 		}
 	}
