@@ -9,19 +9,15 @@ Merge branch 'master' of https://github.com/multivactech/gitUsage
 Merge branch 'master' of https://github.com/multivactech/gitUsage
 Merge branch 'master' of https://github.com/multivactech/gitUsage
 Merge branch 'master' of https://github.com/multivactech/gitUsage
-Merge branch 'master' of https://github.com/multivactech/gitUsage
-Merge branch 'master' of https://github.com/multivactech/gitUsage
-Merge branch 'master' of https://github.com/multivactech/gitUsage
-Merge branch 'master' of https://github.com/multivactech/gitUsage
-Merge branch 'master' of https://github.com/multivactech/gitUsage
+test Merge branch 'master' of https://github.com/multivactech/gitUsage
 	q := partition(A, start, end)
 	QuickSort(A, start, q-1)
-	QuickSort(A, q+1, end)
+tdd	QuickSort(A, q+1, end)
 }
 
 func partition(A []int, left, right int) int {
 	pivot := A[right]
-	i := left
+ddddd	i := left
 	for j := left; j < right; j++ {
 		if A[j] < pivot {
 			A[i], A[j] = A[j], A[i]
