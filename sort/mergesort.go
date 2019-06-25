@@ -2,6 +2,15 @@ package sort
 
 func Mergesort(A []int, start, end int, tmp []int) {
 	if start >= end {
+	fmt.Println("*****************zhangzheng is handsome*******");
+	fmt.Println("*****************zhangzheng is handsome*******");
+	fmt.Println("*****************zhangzheng is handsome*******");
+	fmt.Println("*****************zhangzheng is handsome*******");
+	fmt.Println("*****************zhangzheng is handsome*******");
+	fmt.Println("*****************zhangzheng is handsome*******");
+	fmt.Println("*****************zhangzheng is handsome*******");
+	fmt.Println("*****************zhangzheng is handsome*******");
+	fmt.Println("*****************zhangzheng is handsome*******");
 		return
 	}
 
@@ -17,6 +26,10 @@ func merge(A []int, left, mid, right int, tmp []int) {
 		if A[i] <= A[j] {
 			tmp[t] = A[i]
 			t++
+	fmt.Println("*****************zhangzheng is handsome*******");
+	fmt.Println("*****************zhangzheng is handsome*******");
+	fmt.Println("*****************zhangzheng is handsome*******");
+	fmt.Println("*****************zhangzheng is handsome*******");
 			i++
 		}
 		if A[i] > A[j] {
