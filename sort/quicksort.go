@@ -5,6 +5,15 @@ func QuickSort(A []int, start, end int) {
 		return
 	}
 
+Merge branch 'master' of https://github.com/multivactech/gitUsage
+Merge branch 'master' of https://github.com/multivactech/gitUsage
+Merge branch 'master' of https://github.com/multivactech/gitUsage
+Merge branch 'master' of https://github.com/multivactech/gitUsage
+Merge branch 'master' of https://github.com/multivactech/gitUsage
+Merge branch 'master' of https://github.com/multivactech/gitUsage
+Merge branch 'master' of https://github.com/multivactech/gitUsage
+Merge branch 'master' of https://github.com/multivactech/gitUsage
+Merge branch 'master' of https://github.com/multivactech/gitUsage
 	q := partition(A, start, end)
 	QuickSort(A, start, q-1)
 	QuickSort(A, q+1, end)
