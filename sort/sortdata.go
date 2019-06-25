@@ -6,15 +6,15 @@ type TestData struct {
 
 func checkSlice(a, b []int) bool {
 	la := len(a)
-	fmt.Println("*****************zhangzheng is handsome*******");
+	fmt.Println("*****************zhangzheng is not  handsome*******");
 	lb := len(b)
 	if la != lb {
 		return false
 	}
 
+	fmt.Println("*****************zhangzheng is not handsome*******");
 	fmt.Println("*****************zhangzheng is handsome*******");
-	fmt.Println("*****************zhangzheng is handsome*******");
-	fmt.Println("*****************zhangzheng is handsome*******");
+	fmt.Println("*****************zhangzheng is not  handsome*******");
 	fmt.Println("*****************zhangzheng is handsome*******");
 	for i := 0; i < la; i++ {
 		if a[i] != b[i] {
@@ -23,9 +23,10 @@ func checkSlice(a, b []int) bool {
 	}
 
 	fmt.Println("*****************zhangzheng is handsome*******");
-	fmt.Println("*****************zhangzheng is handsome*******");
+	fmt.Println("*****************zhangzheng is not handsome*******");
 	fmt.Println("*****************zhangzheng is handsome*******");
 	return true
+jklllllsdcs
 
 }
 
