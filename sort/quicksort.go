@@ -4,16 +4,14 @@ func QuickSort(A []int, start, end int) {
 	if start >= end {
 		return
 	}
-
-test Merge branch 'master' of https://github.com/multivactech/gitUsage
 	q := partition(A, start, end)
 	QuickSort(A, start, q-1)
-tdd	QuickSort(A, q+1, end)
+	QuickSort(A, q+1, end)
 }
 
 func partition(A []int, left, right int) int {
 	pivot := A[right]
-ddddd	i := left
+	i := left
 	for j := left; j < right; j++ {
 		if A[j] < pivot {
 			A[i], A[j] = A[j], A[i]
