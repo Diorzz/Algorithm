@@ -174,11 +174,10 @@ func (list *List) one() *node {
 }
 
 func (list *List) last() *node {
-	p := list.one()
-	for {
-		if p.next == nil {
-			return p
-		}
-		p = p.next
+	tail := list.head
+	for tail.next != nil {
+		tail = tail.next
 	}
+
+	return tail
 }
