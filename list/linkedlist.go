@@ -25,41 +25,29 @@ func NewList() *List {
 }
 
 // HeadAdd adds a new element to the head of the linked list.
-func (list *List) HeadAdd(d interface{}) error {
-	if list.head == nil {
-		return errors.New("no head in list")
-	}
+func (list *List) HeadAdd(d interface{}) {
 	newNode := &node{
 		data: d,
 	}
 
 	newNode.next = list.head.next
 	list.head.next = newNode
-	return nil
 }
 
 // TailAdd adds a new element to the tail of the linked list.
-func (list *List) TailAdd(d interface{}) error {
-	if list.head == nil {
-		return errors.New("no head in list")
-	}
+func (list *List) TailAdd(d interface{}) {
 	newNode := &node{
 		data: d,
 	}
 
 	// find the tail node
 	tail := list.head
-	for {
-		if tail.next != nil {
-			tail = tail.next
-		} else {
-			break
-		}
+	for tail.next != nil {
+		tail = tail.next
 	}
 
 	// insert new node
 	tail.next = newNode
-	return nil
 }
 
 // TailAdds adds batch value to the tail of list.
